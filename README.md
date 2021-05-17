@@ -1,5 +1,3 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # :books: Cómo programar en C/C++|Ejercicios    Resueltos.
 
 ###### **Autor del proyecto:** _Rolando Docampo Fernández_
