@@ -1,0 +1,54 @@
+/*
+	Author: Rolando Docampo Fernández
+	Place: Casa de Marcia 
+	Date: 29/04/20 23:00
+	Description: 8.13. Escriba un programa que cifre frases de la lengua inglesa
+	y las convierta en latín infantil. El latín infantil es una forma de 
+	lenguaje codificado utilizado a menudo para diversión. Existen muchas 
+	variantes en los métodos utilizados para formar frases en latín infantil. 
+	Para simplificar, utilice el algoritmo siguiente:
+		Para formar una frase en latín infantil a partir de una frase en lengua
+	inglesa, divida la frase en palabras, utilizando la función strtok. Para 
+	traducir cada palabra inglesa en una palabra en latín infantil, coloque la 
+	primera letra de la palabra inglesa al final de la palabra y añada las 
+	letras "ay". De ahí la palabra "jump" se convierte en "umpjay", la palabra
+	"the" se convierte en "hetya", y la palabra "computer" se convierte en
+	"omputercay". Los espacios en blancos entre palabras se conservan como estan.
+		Suponga lo siguiente: la frase en inglés está formada de palabras 
+	separadas por espacios en blancos, no hay signos de puntuación y todas las 
+	palabras tienen dos o más letras. La función printLatinWord deberá desplegar
+	cada palabra. Sugerencia: cada vez que se encuentre un token en una llamada
+	a strtok, pase el apuntador del token a la función printLatinWord, e imprima
+	la palabra en latín infantil.
+*/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+char *printLatinWord(char *);
+
+main()
+{
+	char frase[200], *token;
+	
+	puts("Entre una frase en lengua inglesa:");
+	gets(frase);
+	
+	printLatinWord(strtok(frase, " "));
+	while(printLatinWord(strtok(NULL, " ")) != NULL);
+	
+    system("PAUSE");
+    return 0;
+}
+
+char *printLatinWord(char *token)
+{
+	char copy[200];
+	
+	strcpy(copy, token);
+	strncat(copy, token, 1);
+	strcpy(copy, copy + 1);
+	strcat(copy, "ay");
+	printf("%s ", copy);
+	return token;
+}
