@@ -6,7 +6,7 @@
 **Año:** 1992  
 **Edición:** Segunda  
 **ISBN:** 0-13-226119-7  
-**URL del autor:** https://deitel.com/
+**URL del autor:** https://deitel.com/ <br>
 **Idioma del proyecto:** Español.
 
 ## Qué es este proyecto?
