@@ -1,4 +1,4 @@
-# :books: Cómo programar en C/C++|Ejercicios    Resueltos.
+# :books: Cómo programar en C/C++|Ejercicios  Resueltos.
 
 ###### **Autor del proyecto:** _Rolando Docampo Fernández_
 
@@ -14,7 +14,7 @@
 Es una **colección de ejercicios resueltos** en lenguaje C/C++ del libro _"Cómo programar en C/C++"_ , que resuelven problemas de la vida cotidiana.
 
 ### Estructura del proyecto:
-El proyecto consiste en una carpeta principal que contiene todo el proyecto, con varias subcarpetas clasificadas por capítulos, que contienen las soluciones a los ejercicios del libro. Los archivos correspondientes a las subcarpetas, son las soluciones a cada ejercicio del libro. La descripción de cada ejercicio se encuentra dentro de cada archivo correspondiente.
+El proyecto consiste en una carpeta principal que contiene todo el proyecto, con varias subcarpetas clasificadas por capítulos, que contienen las soluciones a los ejercicios del libro. Los archivos correspondientes a las subcarpetas, son las soluciones a cada ejercicio del libro. La descripción de cada ejercicio se encuentra dentro de cada archivo correspondiente y en el README.
 
 Ejemplo: 
 - Cómo_programar_en_C/C++  --------------------> //Carperta principal
