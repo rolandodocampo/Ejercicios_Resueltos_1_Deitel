@@ -1,0 +1,4 @@
+# 3.36 
+
+Introduzca un entero que contenga sólo 0s y 1s ( es decir, un entero "Binario") e imprimia su equivalente decimal. (Sugerencia: utilice los operadores de módulo y de división para detectar los dígitos del número "binario" uno por uno, de derecha a izquierda. Al igual que en el sistema numérico decimal, donde el dígito más a la derecha tiene un valor posicional de 1, y el siguiente dígito a la izquierda tiene un valor posicional de 10, y a continuación un valor posicional de 10, y a continuación de 100, y a continuación de 1000, etc, en un sistema numérico binario, el dígito más a la derecha tiene un valor posicional de 1, el siguiente dígito a la derecha tiene un valor posicional de 2, y a continuación de 4, y a continuación de 8, etc. Por lo tanto el número decimal 234 puede ser interpretado como 4 x 1+3 x 10+2 x 100. El equivalente decimal del número 1101 binario es 1 x 1+0 x 2+1x 4+1 x 8 o bien, 1+0+4+8, es decir 13).
+
