@@ -17,13 +17,13 @@ main()
 	printf("Entre dos numeros enteros: ");
 	scanf("%d%d", &numero1, &numero2);
 	
-	printf("****************\n");
-	printf("La suma es: %d\n", numero1 + numero2);
-	printf("El producto es: %d\n", numero1 * numero2);
-	printf("La diferencia es: %d\n", numero1 - numero2);
-	printf("El cociente es: %d\n", numero1 / numero2);
-	printf("El modulo es: %d\n", numero1 % numero2);
-	printf("****************\n");
+	printf("*************************\n");
+	printf("La suma es: %d\t\t*\n", numero1 + numero2);
+	printf("El producto es: %d\t*\n", numero1 * numero2);
+	printf("La diferencia es: %d\t*\n", numero1 - numero2);
+	printf("El cociente es: %d\t*\n", numero1 / numero2);
+	printf("El modulo es: %d \t*\n", numero1 % numero2);
+	printf("*************************\n");
 	
 	system("PAUSE");
 	return 0;
