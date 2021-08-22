@@ -1,0 +1,3 @@
+# 5.26
+
+Un número entero se dice que se trata de un número perfecto si sus factores, incluyendo a 1 (pero excluyendo en el número mismo), suman igual que el número. Por ejemplo, 6 es un número perfecto porque 6 = 1 + 2 + 3. Escriba una función perfect que determine si el parámetro number es un número perfecto. Utilice esta función en un programa que determine e imprima todos los números perfectos entre 1 y 1000. Imprima los factores de cada número perfecto para confirmar que el número de verdad es perfecto. Ponga en acción la potencia de su computadora para probar números más grandes que 1000.

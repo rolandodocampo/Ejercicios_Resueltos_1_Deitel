@@ -1,0 +1,3 @@
+# 5.34
+
+Sistemas más avanzados de instrucción asistida por computadora vigila el rendimiento del alumno a lo largo de un periodo de tiempo. La decisión para empezar un nuevo tema, a menudo se basa en el léxico del alumno en relación con temas anteriores. Modifique el programa del ejercicio 5.33 para contar el número de respuestas correctas e incorrectas escritas por el estudiante. Una vez que el alumno escriba 10 respuestas, su programa deberá calcular el porcentaje de respuestas correctas. Si el porcentaje es menor de 75%, su programa deberá imprimir "Please ask you instructor for extra help" y a continuación terminar.

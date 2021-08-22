@@ -1,0 +1,3 @@
+# 4.37
+
+Una crítica del enunciado break y del enunciado continue es que cada uno de ellos no es estructurado. De hecho los enunciados break y continue siempre pueden ser remplazados por enunciados estructurados, aunque el hacerlo puede resultar un poco torpe. Describa en general cómo eliminaría cualquier enunciado break de un ciclo de programa, y lo remplazaría con algún equivalente estructurado. (Sugerencia: el enunciado break deja un ciclo desde dentro del cuerpo del ciclo). La otra forma de salir es haciendo fallar la prueba de continuación de ciclo, una segunda prueba que indique (salida temprana debida a una condición "de salida"). Utilice la técnica que desarrolló aquí para eliminar el enunciado 'break' del programa de la figura 4.11.

@@ -1,0 +1,3 @@
+# 5.41
+
+(Visualización de la recursión). Es interesante poder observar la recursión en "acción". Modifique la función factorial de la figura 5.14 para imprimir su variable local y su parámetro de llamada recursiva. Para cada llamada recursiva, despliegue las salidas en una línea por separado, y añada un nivel de sangría. Haga todo lo posible para que las salidas resulten claras, interesantes y significativas. Su meta aquí es diseñar e implementar un formato de salida que le ayude a una persona a una mejor comprensión de la recursión. Quizás desee a añadir capacidades de despliegue, tales como éstas, a los muchos otros ejemplos de recursión así como a los ejercicios a todo lo largo del texto.

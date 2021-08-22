@@ -2,7 +2,7 @@
 	Author: Rolando Docampo Fernández
 	Place: Casa Karenia
 	Date: 30/10/19 16:31
-	Description: 5.9. Un estacionamiento público carga $2.00 de estacionamiento 
+	Description: 5.9. Un estacionamiento p�blico carga $2.00 de estacionamiento 
 	mínimo por las primeras tres horas. El estacionamiento carga $0.50 
 	adicionales por cada hora o parte de la misma en exceso de tres horas. El 
 	cargo máximo para cualquier periodo de 24 horas es $10.00. Suponga que no 

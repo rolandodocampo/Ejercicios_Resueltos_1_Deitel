@@ -2,33 +2,33 @@
 	Author: Rolando Docampo Fern√°ndez
 	Place: Casa de Talita Pianta
 	Date: 12/05/21 16:46
-	Description: 6.23. (Gr√°ficos tipo tortuga). El lenguaje Logo, que es en 
+	Description: 6.23. (Gr·ficos tipo tortuga). El lenguaje Logo, que es en 
 	particular popular entre usuarios de computadoras personales, hizo famoso
-	el concepto de los gr√°ficos tipo tortuga. Imagine una tortuga mec√°nica, que
-	camina por la habitaci√≥n bajo el control de un programa de C. La tortuga 
+	el concepto de los gr·ficos tipo tortuga. Imagine una tortuga mec·nica, que
+	camina por la habitaciÛn bajo el control de un programa de C. La tortuga 
 	sujeta una pluma en dos posiciones posibles, arriba o abajo. Cuando la pluma
-	est√° abajo, la tortuga traza formas conforme se mueve; cuando la pluma est√° 
+	est· abajo, la tortuga traza formas conforme se mueve; cuando la pluma est· 
 	arriba, la tortuga se mueve a su antojo libremente, sin escribir nada. En 
-	este problema simularemos la operaci√≥n de la tortuga y adem√°s crearemos un
+	este problema simularemos la operaciÛn de la tortuga y adem·s crearemos un
 	bloque de notas computarizado.
 		Utilice un arreglo de 50 por 50 de nombre floor, que se inicializa a 
 	ceros. Lea los comandos partiendo de un arreglo que los contenga. Lleve el
 	control en todo momento de la posicion actual de la tortuga, asi como si en
-	ese momento la pluma est√° arriba o abajo. Suponga que la tortuga siempre 
-	empieza a partir de la posici√≥n 0,0 en el piso, con su pluma arriba. El 
+	ese momento la pluma est· arriba o abajo. Suponga que la tortuga siempre 
+	empieza a partir de la posiciÛn 0,0 en el piso, con su pluma arriba. El 
 	conjunto de comandos de la tortuga que su programa debe procesar, son como
 	sigue:
-			Comando				Significado
+			Comando			Significado
 			1					Pluma arriba
 			2					Pluma abajo
 			3					Giro a la derecha
 			4					Giro a la izquierda
 			5,10				Moverse hacia adelante 10 espacios
-								(o un n√∫mero distinto que 10)
+								(o un n˙mero distinto que 10)
 			6					Imprima el arreglo de 50 por 50
 			7					Fin de los datos (valor centinela)
-	Suponga que la tortuga esta en alg√∫n lugar cerca del centro del piso. El 
-	siguiente "programa" dibujar√≠a e imprimir√≠a un cuadrado de 12 por 12:
+	Suponga que la tortuga esta en alg˙n lugar cerca del centro del piso. El 
+	siguiente "programa" dibujar· e imprimir· un cuadrado de 12 por 12:
 			2
 			5,12
 			3
@@ -41,14 +41,14 @@
 			6
 			7
 	Conforme la tortuga se mueve con la pluma abajo, defina los elementos 
-	apropiados del arreglo floor al valor 1. Cuando se d√° el comando 6 
+	apropiados del arreglo floor al valor 1. Cuando se d· el comando 6 
 	(imprimir), siempre que exista en el arreglo un 1, despliegue un asterisco,
 	o cualquier otro caracter que seleccione. Siempre que aparesca un 0, 
-	despliegue un espacio vac√≠o. Escriba un programa en C para poner en 
-	operaci√≥n las capacidades gr√°ficas de la tortuga discutidas aqu√≠.
-	Escriba varios programas gr√°ficos de tortuga para dibujar formas 
-	interesantes. A√±ada otros comandos para incrementar el poder del lenguaje
-	gr√°fico de su tortuga.
+	despliegue un espacio vacÌo. Escriba un programa en C para poner en 
+	operaciÛn las capacidades gr·ficas de la tortuga discutidas aquÌ.
+	Escriba varios programas gr·ficos de tortuga para dibujar formas 
+	interesantes. AÒada otros comandos para incrementar el poder del lenguaje
+	gr·fico de su tortuga.
 */
 
 #include<stdio.h>

@@ -2,7 +2,7 @@
 	Author: Rolando Docampo Fernández
 	Place: Casa de Marcia 
 	Date: 04/04/20 10:28
-	Description: 6.19.Escriba un programa en C que simule el tirar dos dados. El
+	Description: 6.19. Escriba un programa en C que simule el tirar dos dados. El
 	programa deberá utilizar rand para tirar el primer dado, y después deberá 
 	utilizar rand para tirar el segundo. La suma de los dos valores deberá 
 	entonces ser calculada. Nota: en vista de que cada dado puede mostrar un 

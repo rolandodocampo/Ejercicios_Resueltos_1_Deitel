@@ -1,0 +1,3 @@
+# 8.16
+
+Escriba un programa que introduzca desde el teclado una línea de texto y una cadena de búsqueda. Utilizando la función strstr localice en la línea de texto la primera ocurrencia de la cadena de búsqueda, y asigne la posición a la variable searchPtr del tipo char *. Si encuentra la cadena de búsqueda, imprima el resto de la línea de texto, empezando con la cadena de texto. A continuación utilice otra vez strstr, para localizar en la línea de texto la siguiente ocurrencia de la cadena de búsqueda. Si encuentra una segunda ocurrencia, imprima el resto de la línea de texto, empezando con la segunda ocurrencia. Sugerencia: la segunda llamada a strstr deberá contener searchPtr + 1 como primer argumento.

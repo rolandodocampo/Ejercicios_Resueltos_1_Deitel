@@ -1,0 +1,3 @@
+# 5.36
+
+Modifique el programa del ejercicio 5.35 para contar el número de veces que intenta adivinar el jugador. Si el número es 10 o menor, imprima Either you know the secret or you got lucky!. Si el jugador adivina en 10 intentos, entonces imprima Ahah!, you know the secret!. Si el jugador hace más de 10 intentos, entonces imprima You should be able to do better! Por qué no debería de tomar más de 10 intentos? "Bueno", con cada una de las estimaciones buenas, el jugador tendría que estar en posición de eliminar la mitad de los números. Ahora muestre porque cualquier número del 1 al 1000 puede ser encontrado en 10 o menos intentos.

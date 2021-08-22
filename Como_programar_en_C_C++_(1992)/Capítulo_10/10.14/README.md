@@ -1,0 +1,3 @@
+# 10.14
+
+Utilizando el operador de desplazamiento a la derecha, el operador AND a nivel de bits y una máscara, escriba la función unpackCharacters que toma el entero unsigned del ejercicio 10.13 y lo desempaca en dos caracteres. Para desempacar dos caracteres de un entero unsigned de 2 bytes, combine el entero unsigned con la máscara 65280 (11111111 00000000) y desplaze hacia la derecha el resultado en 8 bits. Asigne el valor resultante a una variable char. A continuación combine el 	entero unsigned con la máscara 255 (00000000 11111111). Asigne el resultado 	en otra variable char. El programa deberá imprimir el entero unsigned en bits, antes de ser desempacado, y a continuación imprimir los caracteres en bits para confirmar que fueron empacados correctamente.

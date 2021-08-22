@@ -1,0 +1,6 @@
+# 8.11
+
+Escriba un programa que utilice generación de números aleatorios para crear oraciones. El programa deberá utilizar 4 arreglos de apuntadores a char llamados article, noun, verb y preposition. El programa deberá crear una oración, seleccionando una palabra al azar de cada unos de los arreglos, en el orden siguiente: article, noun, verb, preposition y noun. Conforme se seleccione cada palabra, deberá ser concartenada con las palabras anteriores en un arreglo lo suficiente extenso para contener a toda la oración final, deberá iniciar con una letra mayúscula y terminar con un punto. El programa deberá generar 20 oraciones de este tipo.
+	
+
+Los arreglos deberán ser llenados como siguie: El arreglo article deberá contener los artículos "the", "a", "one", "some", y "any"; el arreglo noun deberá contener los nombres "boy", "girl", "dog", "town" y "car"; el arreglo verb deberá contener los verbos "drove", "jumped", "ran", "walked", y 	"skipped"; el arreglo preposition deberá contener las prepocisiones "to", 	"from", "over", "under", y "on". Una vez escrito el programa anterior y funcionando, modifíquelo para producir una corta historia que este formada con varias de estas oraciones. (!Qué tal le parecería la posibilidad de convertirse en un escritor de tesis al azar!).	
