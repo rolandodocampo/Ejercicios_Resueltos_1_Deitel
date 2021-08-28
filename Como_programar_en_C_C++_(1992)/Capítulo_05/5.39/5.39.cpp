@@ -53,95 +53,45 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/*  n: El número de discos a mover. 
+/* n: El número de discos a mover. 
 	i: La estaca en la cual se acumularán estos discos al inicio. 
 	f: La estaca a la cual esta pila de discos se moverá.
 	m: La estaca a utilizarse como área de almacenamiento temporal. 
 */
-void Hanoi(short, short, short, short);
-short mayor(short, short, short);
+void hanoi(short, short, short, short);
 
 main()
 {
 	short n, i, f, m;
 	
-	printf("Para resolver las Torres de Hanoi, necesito que introduzcas esto:\n");
+	printf("**********************************\n");
+	printf("*       TORRES DE HANOI          *\n");
+	printf("**********************************\n");
 	printf("El numero de discos a mover: ");
 	scanf("%hd", &n);
-	printf("La estaca en la cual se acumularan estos discos al inicio: ");
+	printf("Estaca inicial: ");
 	scanf("%hd", &i);
-	printf("La estaca a la cual esta pila de discos se movera: ");
+	printf("Estaca final: ");
 	scanf("%hd", &f);
-	printf("La estaca a utilizarse como area de almacenamiento temporal: ");
+	printf("Estaca temporal: ");
 	scanf("%hd", &m);
-	Hanoi(n, i, f, m);
+	printf("**********************************\n");
+	printf("*          MOVIMIENTOS           *\n");
+	printf("**********************************\n");
+	hanoi(n, i, f, m);
 	
 	system("PAUSE");
 	return 0;
 }
 
-void Hanoi(short n, short i, short f, short m)
+void hanoi(short discos, short estaca_inicial, short estaca_final, short almacen)
 {
-	static short memoria = n, contador, contador2;
-	static short e1, e2, e3;
-	
-	if(n == 1)
-	{
-		printf("%hd -> %hd\n", i, f);
-		++contador;
-		
-		if(contador < 2)
-			return Hanoi(memoria, m, f, i);
-		else
-		{
-			contador = 0;
-			contador2 = 0;
-			return;
-		}
+	if(discos != 1)
+	{	
+		hanoi(discos - 1, estaca_inicial, almacen, estaca_final);
+		printf("%d %c %d\n", estaca_inicial, 26, estaca_final);
+		hanoi(discos - 1, almacen, estaca_final, estaca_inicial);
 	}
-	else
-	{
-		if(contador2 == 0)
-		{
-			switch(i)
-			{
-				case 1:
-					e1 = memoria;
-					break;
-				case 2:
-					e2 = memoria;
-					break;
-				case 3:
-					e3 = memoria;
-					break;
-				default:
-					printf("Error en la identificación de la estaca inicial.\n");
-					break;
-			}
-		}
-		else
-		{
-				
-		}
-		
-		contador2++;
-		return Hanoi(n - 1, i, f, m);
-	}
-}
-
-short mayor(short disc_e1, short disc_e2, short disc_e3)
-{
-	short maximo = disc_e1;
-	
-	if(maximo < disc_e2)
-		maximo = disc_e2;
-	else if(maximo < disc_e3)
-		maximo = disc_e3;
-		
-	if(maximo == disc_e1)
-		return 1;
-	else if(maximo == disc_e2)
-		return 2;
-	else
-		return 3;
+	else if(discos == 1)
+		printf("%d %c %d\n", estaca_inicial, 26, estaca_final);
 }
