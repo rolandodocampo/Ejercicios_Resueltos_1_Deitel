@@ -1,7 +1,7 @@
 /*
 	Author: Rolando Docampo Fernández
-	Place: Casa de Karenia
-	Date: 04/12/19 15:55
+	Place: Casa de Talita
+	Date: 29/08/2021 10:25
 	Description: 5.39. (Torres de Hanoi) Todos los científicos de cómputos 
 	incipientes deben de enfrentarse con ciertos problemas clásicos, y las 
 	Torres de Hanoi (vea la figura 5.18) es uno de los más famosos. Dice la 
