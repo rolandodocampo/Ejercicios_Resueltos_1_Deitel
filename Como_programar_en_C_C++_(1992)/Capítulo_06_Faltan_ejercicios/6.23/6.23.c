@@ -1,7 +1,7 @@
 /*
-	Author: Rolando Docampo Fern√°ndez
+	Author: Rolando Docampo Fern·ndez
 	Place: Casa de Talita Pianta
-	Date: 12/05/21 16:46
+	Date: 04/09/21 17:13
 	Description: 6.23. (Gr·ficos tipo tortuga). El lenguaje Logo, que es en 
 	particular popular entre usuarios de computadoras personales, hizo famoso
 	el concepto de los gr·ficos tipo tortuga. Imagine una tortuga mec·nica, que
@@ -77,8 +77,8 @@ main()
 		printf("COMANDO%hd: ", conteo++);
 		scanf("%s", entrada);
 		
-		val = conv(entrada, 5);	// CONVIERTO EL VALOR DEL USUARIO DE CHAR A SHORT, -1 VALOR ERRONEO;	
-		
+		val = conv(entrada, 5);	/* CONVIERTO EL VALOR DEL USUARIO DE CHAR A SHORT, -1 VALOR ERRONEO */	
+				
 		if(val != -1 && val != 9)
 		{
 			update_comandos(comandos, val);
@@ -93,17 +93,31 @@ main()
 			
 			if(comandos[5] != 0)
 			{
-				bandera = mover(comandos, floor, posicion); // 1 SI SE SALE DEL ARREGLO
+				bandera = mover(comandos, floor, posicion); /* 1 SI SE SALE DEL ARREGLO */
 				comandos[5] = 0;
-				--conteo;
+				
+				if(bandera == 1)
+				{
+					val = 9;
+					--conteo;
+				}
 			}
 		}
-		else if(val != 9)
+		else if(val == 9)
+		{
+			printf("Trayecto fuera de los limites del tablero.\n");
+			--conteo;
+			continue;
+		}
+		else if(val == -1)
 		{
 			printf("Comando errado.\n");
 			--conteo;
 		}
-	}while(val != 9 || bandera == 1);
+		
+		if(val == 7)
+			break;
+	}while(1);
 	
 	if(comandos[6] == 1)
 	{
@@ -189,7 +203,7 @@ char mover(char comandos[], char floor[][C], char posicion[])
 	}
 }
 
-char overflow(const char comandos[], char posicion[]) // 1 overflow, 0 no overflow
+char overflow(const char comandos[], char posicion[]) /* 1 overflow, 0 no overflow  */
 {	
 	switch(comandos[0])
 	{
@@ -251,7 +265,7 @@ void derecha(char comandos[])
 	comandos[3] = 0;
 }
 
-void imp(const char a[][C]) // IMPRIME FLOOR
+void imp(const char a[][C]) /* IMPRIME FLOOR  */
 {
 	char i, j;
 	
@@ -264,9 +278,10 @@ void imp(const char a[][C]) // IMPRIME FLOOR
 	}
 }
 
-short conv(const char entrada[], const int size) // -1 Entrada no valida
+short conv(const char entrada[], const int size) /* -1 Entrada no valida */
 {
 	short convFrac(const char []);
+	
 	switch(entrada[0])
 	{
 		case '1':
@@ -283,15 +298,15 @@ short conv(const char entrada[], const int size) // -1 Entrada no valida
 			break;
 		case '5':
 			if(convFrac(entrada) == -1)
-				return -1;
+				return 9;
 			else
 				return convFrac(entrada) + 50;
 			break;
 		case '6':
 			return 6;
 			break;
-		case '9':
-			return 9;
+		case '7':
+			return 7;
 			break;
 		default:
 			return -1;

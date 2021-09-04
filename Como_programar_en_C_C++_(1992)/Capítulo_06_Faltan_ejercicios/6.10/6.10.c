@@ -44,14 +44,20 @@ main()
 		++cliente;
 	}while(ventas_brutas != -1);
 	
-	printf("%12s%20s\n", "Valores", "Frecuencia");
+	printf("***********************************************\n");
+	printf("*%13s%9c%17s%7c\n", "Valores", '|', "Frecuencia", '*');
+	printf("***********************************************\n");
 	for(i = 1; i <= T - 1; i++)
 	{
 		if(i != T - 1)
-			printf("%d. $%d00 - %d99%15d\n", i, i + 1, i + 1, frec_salarial[i]);
+		{
+			printf("* %d. $%d00 - %d99%8c%12d%12c\n", i, i + 1, i + 1, '|', frec_salarial[i], '*');
+			printf("*---------------------------------------------*\n");
+		}
 		else
-			printf("%d. $1000 o superior%9d\n", i, frec_salarial[i]);
+			printf("* %d. $1000 o superior%2c%12d%12c\n", i, '|', frec_salarial[i], '*');
 	}
+	printf("***********************************************\n");
 	
 	system("PAUSE");
 	return 0;

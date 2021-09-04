@@ -32,10 +32,10 @@
 #include<stdlib.h>
 #define ASIENTOS 10
 
-short intro(void); // ok
-short fumar(void); // ok
-short asignar_asientos(short [], const short); // ok
-void boleto(const short, const short); // ok
+short intro(void); /* ok */
+short fumar(void); /* ok */
+short asignar_asientos(short [], const short); /* ok */
+void boleto(const short, const short); /* ok */
 short cambio_de_zona(void);
 void zona_fumar(short [], short);
 void zona_no_fumar(short [], short);
@@ -52,9 +52,9 @@ main()
 		{
 			zona = fumar();
 			
-			if(zona == 1) // Zona de fumar
+			if(zona == 1) /* Zona de fumar */
 				zona_fumar(avion, 0);
-			else	// Zona de no fumar
+			else	/* Zona de no fumar  */
 				zona_no_fumar(avion, 0);		
 		}
 		else
@@ -69,8 +69,8 @@ main()
 	return 0;
 }
 
-short intro(void) // 1 = Si desea reservar 
-{				  // 0 = Si no desea reservar			
+short intro(void) /* 1 = Si desea reservar */
+{				  /* 0 = Si no desea reservar	*/		
 	char respuesta, error = 0;
 	
 	printf("**************************************\n"
@@ -111,8 +111,8 @@ short intro(void) // 1 = Si desea reservar
 	}while(error == 1);
 }
 
-short fumar(void)		// 1 = Fumar
-{					    // 0 = No Fumar
+short fumar(void)		/* 1 = Fumar */
+{					    /* 0 = No Fumar  */
 	short valor, error = 0;
 	
 	printf("Please type 1 for \"smoking\"\n"
@@ -143,13 +143,13 @@ short fumar(void)		// 1 = Fumar
 	}while(error == 1);
 }
 
-short asignar_asientos(short avion[], const short zona) // 0 = Seccion de fumar esta lleno
+short asignar_asientos(short avion[], const short zona) /* 0 = Seccion de fumar esta lleno  */
 {												  
 	short i, control = 0;
 	
-	if(zona == 1)  // Zona de Fumar
+	if(zona == 1)  /* Zona de Fumar  */
 	{
-		for(i = 0; i <= ASIENTOS - 6; i++)  // Solo 5 asientos
+		for(i = 0; i <= ASIENTOS - 6; i++)  /* Solo 5 asientos */
 		{
 			if(avion[i] == 0)
 			{
@@ -163,9 +163,9 @@ short asignar_asientos(short avion[], const short zona) // 0 = Seccion de fumar 
 		if(control == 5)
 			return 0;
 	}
-	else		 // Zona de no Fumar
+	else		 /* Zona de no Fumar */
 	{
-		for(i = 5; i <= ASIENTOS - 1; i++)  // Solo 5 asientos
+		for(i = 5; i <= ASIENTOS - 1; i++)  /* Solo 5 asientos */
 		{
 			if(avion[i] == 0)
 			{
@@ -194,8 +194,8 @@ void boleto(const short asiento, const short zona)
 	
 }
 
-short cambio_de_zona(void)    // 1: Si quiero cambiar
-{							  // 0: No quiero
+short cambio_de_zona(void)    /* 1: Si quiero cambiar */
+{							  /* 0: No quiero  */
 	char respuesta, error = 0;
 	
 	printf("La seccion esta llena.\n"

@@ -42,10 +42,23 @@ main()
 	while(validez())
 	{
 		printf("Volante #%d.\n", volante);
-		printf("Numero del vendedor: ");
-		scanf("%d", &vendedor);
-		printf("Numero del producto: ");
-		scanf("%d", &producto);
+		
+		do{
+			printf("Numero del vendedor (1-4): ");
+			scanf("%d", &vendedor);
+			
+			if(vendedor < 1 || vendedor > 4)
+				printf("Valor fuera de los limites.\n");
+		}while(vendedor < 1 || vendedor > 4);
+		
+		do{
+			printf("Numero del producto (1-5): ");
+			scanf("%d", &producto);
+			
+			if(producto < 1 || producto > 5)
+				printf("Valor fuera de los limites.\n");
+		}while(producto < 1 || producto > 5);
+		
 		printf("Valor del producto: ");
 		scanf("%f", &valor);
 		calculador(sales, vendedor - 1, producto - 1, valor);
@@ -80,8 +93,8 @@ void imprimir(const float tabla[][VENDEDORES])
 	}
 }
 
-short validez(void)		// 1 = Si desea introducir mas datos
-{						// 0 = No desea mas datos
+short validez(void)		/* 1 = Si desea introducir mas datos */
+{						/* 0 = No desea mas datos  */
 	char control;
 	
 	printf("Deseas introducir un volante (S/N): ");

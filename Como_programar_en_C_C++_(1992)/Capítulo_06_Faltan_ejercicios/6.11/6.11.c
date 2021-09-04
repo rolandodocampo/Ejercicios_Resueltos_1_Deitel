@@ -21,7 +21,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#define T 1000
+#define T 100
 
 void ordenador(int [], const short);
 void imp(const int [], const short);
@@ -31,13 +31,18 @@ main()
 {
 	int datos[T] = {0};
 	
-	imp(datos, T);
-	printf("********************************\n");
+	srand(time(NULL));
 	generador(datos, T);
+	printf("***********************************************\n");
+	printf("*             TABLA DESORDENADA               *\n");
+	printf("***********************************************\n");
 	imp(datos, T);
-	printf("********************************\n");
+	printf("***********************************************\n");
+	printf("*               TABLA ORDENADA                *\n");
+	printf("***********************************************\n");
 	ordenador(datos, T);
 	imp(datos, T);
+	printf("***********************************************\n");
 	
 	return 0;
 }
@@ -71,12 +76,13 @@ void imp(const int datos[], const short cant)
 {
 	short i;
 	
+	printf("%3c", ' ');
 	for(i = 0; i <= cant - 1; i++)
 	{
-		if(i % 10 == 0 && i != 0)
-			printf("\n");
+		if((i + 1) % 10 == 0 && i != 0)
+			printf("%3d\n%3c", datos[i], ' ');
 		else
-			printf("%d ", datos[i]);
+			printf("%3d ", datos[i]);
 	}
 	
 	printf("\n");
@@ -85,8 +91,6 @@ void imp(const int datos[], const short cant)
 void generador(int datos[], const short cant)
 {
 	short i;
-	
-	srand(time(NULL));
 	
 	for(i = 0; i <= cant - 1; i++)
 		datos[i] = rand() % cant;
