@@ -12,9 +12,9 @@
 	"eliminadas" de un tablero vacío, una vez que se ha colocado una reina en dicha casilla. Por 
 	ejemplo, a cada una de las cuatro esquinas deberá asignársele el valor 22, como en la figura 
 	6.25).
-		Una vez que esos "númerosde eliminación" son colocados en las 64 casillas, la heurística 
-		apropiada podría ser: coloque la reina siguiente en la casilla con el número de eliminación 
-		más pequeño. Por qué es de forma intuitiva atrayente esta estrategia?
+	Una vez que esos "númerosde eliminación" son colocados en las 64 casillas, la heurística 
+	apropiada podría ser: coloque la reina siguiente en la casilla con el número de eliminación 
+	más pequeño. Por qué es de forma intuitiva atrayente esta estrategia?
 */			
 
 #include<stdio.h>
