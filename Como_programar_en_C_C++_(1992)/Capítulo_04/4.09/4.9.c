@@ -14,19 +14,23 @@
 
 main()
 {
-	int cantVal, contador, total = 0, valor; 
+	int cantVal, total = 0, valor, memoria; 
 	
 	printf("Introduzca los valores: ");
 	scanf("%d", &cantVal);
+	memoria = cantVal;
 	
-	for(contador = 1; contador <= cantVal; contador++)
+	while(cantVal >= 1)
 	{
 		scanf("%d", &valor);
 		total += valor;
+		--cantVal;
 	}
 	
+	printf("****************************\n");
 	printf("%-21s%s\n", "Cantidad de Valores", "Total");
-	printf("%-21d%-5d\n", cantVal, total);
+	total != 0 ? printf("%-21d%-5d\n", memoria, total) : printf("Sin valores.\n");
+	printf("****************************\n");
 	
    system("PAUSE");
    return 0;

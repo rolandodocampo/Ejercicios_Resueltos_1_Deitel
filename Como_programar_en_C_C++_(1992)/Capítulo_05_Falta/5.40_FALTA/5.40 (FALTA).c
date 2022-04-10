@@ -54,7 +54,7 @@ void hanoi(short discos, short estaca_inicial, short estaca_final, short almacen
 			tem_final = estaca_final, tem2_final = estaca_final,
 			tem_almacen = almacen, tem2_almacen = almacen;
 			
-	if(discos != 1)
+	if(discos > 1)
 	{			
 		do{	
 			for(i = tem_discos; i > 1; i--)
@@ -64,7 +64,7 @@ void hanoi(short discos, short estaca_inicial, short estaca_final, short almacen
 				tem_almacen = memoria;
 			}
 			printf("%d %c %d\n", tem_inicial, 26, tem_final);
-			/////////////////////////////
+			/*///////////////////////////*/
 			
 			do{	
 			for(i = tem2_discos; i > 1; i--)
@@ -79,7 +79,7 @@ void hanoi(short discos, short estaca_inicial, short estaca_final, short almacen
 			tem2_almacen = almacen;
 		}while(--tem2_discos > 1);
 		
-			////////////////////////////
+			/*//////////////////////////*/
 			tem2_discos = discos;
 			tem_final = tem2_final = estaca_final;
 			tem_almacen = tem2_almacen = almacen;
@@ -91,4 +91,6 @@ void hanoi(short discos, short estaca_inicial, short estaca_final, short almacen
 	}
 	else if(discos == 1)
 		printf("%d %c %d\n", estaca_inicial, 26, estaca_final);
+	else
+		printf("No hay discos para mover!!!.\n");
 }

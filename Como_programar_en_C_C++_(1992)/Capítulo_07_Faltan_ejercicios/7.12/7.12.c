@@ -22,24 +22,24 @@
 #define PALO 4
 #define TIPO 13
 
-void imprimir_deck(const char [][TIPO]);	// OK (deck)
-void shuffle(char [][TIPO]);	// OK (deck) ...
-void deal(const char [][TIPO], char *[], char *[]); // OK (deck, face, suit); Nota: Da error al poner const en los dos char.
-char cant_par(const char [][TIPO]); // OK (deck); Debuelve la cantidad de pares que hay en la mano.				 
-char cant_tipo(const char [][13]);	// OK (deck); Debuelve la cantidad de barajas de un mismo tipo mayor que tres.
-char color(const char [][13]);	// OK (deck); Debuelve 1 si hay un color.
-char flor_imperial(const char [][13]); // OK (deck); Debuelve 1 si hay una flor imperial.
+void imprimir_deck(const char [][TIPO]);	/* OK (deck) */
+void shuffle(char [][TIPO]);	/* OK (deck) ... */
+void deal(const char [][TIPO], const char *[], const char *[]); /* OK (deck, face, suit); Nota: Da error al poner const en los dos char. */
+char cant_par(const char [][TIPO]); /* OK (deck); Debuelve la cantidad de pares que hay en la mano. */				 
+char cant_tipo(const char [][13]);	/* OK (deck); Debuelve la cantidad de barajas de un mismo tipo mayor que tres. */
+char color(const char [][13]);	/* OK (deck); Debuelve 1 si hay un color. */
+char flor_imperial(const char [][13]); /* OK (deck); Debuelve 1 si hay una flor imperial. */
 													
 main()												
 {
 	char *suit[PALO] = {"Hearts", "Diamonds", "Clubs", "Spades"};
 	char *face[TIPO] = {"Ace", "Deuce", "Three", "Four", "Five", "Six", "Seven",
-					    "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
-	char deck[PALO][TIPO] = {0}; //El mazo es del tipo char para optimizar memoria
+					    	  "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+	char deck[PALO][TIPO] = {0}; /* El mazo es del tipo char para optimizar memoria */
 	
 	srand(time(NULL));
 	imprimir_deck(deck);
-	shuffle(deck); 			//...: eso significa que hay que optimizarla más
+	shuffle(deck); 			/*...: eso significa que hay que optimizarla más*/
 	imprimir_deck(deck);
 	deal(deck, face, suit);
 	printf("\nLa cantidad de pares es: %d\n", cant_par(deck));	
@@ -51,7 +51,7 @@ main()
 	return 0;
 }
 
-void imprimir_deck(const char deck[][TIPO]) // OK
+void imprimir_deck(const char deck[][TIPO]) /* OK */
 {
 	char fila, columna;
 	
@@ -62,13 +62,13 @@ void imprimir_deck(const char deck[][TIPO]) // OK
 	{
 		putchar('*');
 		for(columna = 0; columna <= TIPO - 1; columna++)
-			printf(" %2hd", deck[fila][columna]);
+			printf(" %2d", deck[fila][columna]);
 		printf(" *\n");
 	}
 	printf("******************************************\n");
 }
 
-void shuffle(char deck[][TIPO])	// OK ...
+void shuffle(char deck[][TIPO])	/* OK ... */
 {
 	char card, row, column;
 	
@@ -87,7 +87,7 @@ void shuffle(char deck[][TIPO])	// OK ...
 	}
 }
 
-void deal(const char deck[][TIPO], char *face[], char *suit[])
+void deal(const char deck[][TIPO], const char *face[], const char *suit[])
 {
 	int card, row, column;
 	
@@ -104,8 +104,8 @@ void deal(const char deck[][TIPO], char *face[], char *suit[])
 	}	
 }
 
-char cant_par(const char deck[][TIPO])		// Un par es: dos cartas del mismo 
-{											// palo y tres cartas desempardas.
+char cant_par(const char deck[][TIPO])		/* Un par es: dos cartas del mismo */
+{											/* palo y tres cartas desempardas. */
 	char cant_palo[PALO] = {0}, i, j, pares = 0, card, contador = 0;
 	
 	for(card = 1; card <= 5; card++)
@@ -136,8 +136,8 @@ char cant_par(const char deck[][TIPO])		// Un par es: dos cartas del mismo
 		return 0;
 }
 
-char cant_tipo(const char deck[][13])	// Tres de un tipo: tres cartas del mismo tipo y dos de un tipo diferente.
-{										// Cuatro de un tipo: cuatro cartas del mismo tipo y uno de un tipo diferente.
+char cant_tipo(const char deck[][13])	/* Tres de un tipo: tres cartas del mismo tipo y dos de un tipo diferente. */
+{												 /* Cuatro de un tipo: cuatro cartas del mismo tipo y uno de un tipo diferente. */
 	char cant_tipo[TIPO] = {0}, i, j, tipos3 = 0, card, contador = 0;
 	char tipos4 = 0;
 	
@@ -171,7 +171,7 @@ char cant_tipo(const char deck[][13])	// Tres de un tipo: tres cartas del mismo 
 		return 0;
 }
 
-char color(const char deck[][13])		// Color es: cinco cartas del mismo palo.
+char color(const char deck[][13])		/* Color es: cinco cartas del mismo palo. */
 {
 	char cant_palo[PALO] = {0}, i, j, card;
 	
@@ -196,7 +196,7 @@ char color(const char deck[][13])		// Color es: cinco cartas del mismo palo.
 	return 0;
 }
 
-char flor_imperial(const char deck[][13])	// Flor imperial es:  cinco cartas de mayor valor en tipo consecutivas y del mismo palo
+char flor_imperial(const char deck[][13])	/* Flor imperial es:  cinco cartas de mayor valor en tipo consecutivas y del mismo palo */
 {
 	char card, i, j, consecutivos = 0;
 	
