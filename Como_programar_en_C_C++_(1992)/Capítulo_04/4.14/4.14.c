@@ -12,21 +12,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+main() /*Factorial de n!*/
 {
-	int contador, n, factorial = 1;
+	char cont, n, fact = 1; /*n = {1, 2, 3, 4, 5}*/
 	
-	printf("%-9s%s\n", "Numero", "Factorial");
-	for(contador = 1; contador <= 5; contador++)
+	printf("%6s%16s\n", "Numero", "Factorial");
+	for(n = 1; n <= 5; n++) /*Envia los numeros n del 1 al 5*/
 	{
-		for(n = 1; n <= contador; n++)
-			factorial *= n;
-			
-		printf("%-9d%-9d\n", contador, factorial);
-		factorial = 1;
+		for(cont = 1, fact = 1; cont <= n; cont++) /*Calcula el factorial*/
+			fact *= cont;
+		
+		printf("%6d%16d\n", n, fact);
 	}
 	
    system("PAUSE");
    return 0;
 }
-

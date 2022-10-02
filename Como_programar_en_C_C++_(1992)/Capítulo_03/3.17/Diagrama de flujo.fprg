@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-02 11:57:03 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMDI7IjExOjQyOjM1ICI7MjM1MQ=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMDI7IjExOjU3OjAzICI7MTsyNDYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="galones, totalGalones, promMxG" type="Real" array="False" size=""/>
+            <declare name="millas, totalMillas" type="Integer" array="False" size=""/>
+            <assign variable="totalGalones" expression="0.00"/>
+            <assign variable="totalMillas" expression="0"/>
+            <output expression="&quot;Introduzca la cantidad de galones usados (-1 para terminar): &quot;" newline="False"/>
+            <input variable="galones"/>
+            <while expression="galones != -1">
+                <output expression="&quot;Introduzca las millas conducidas: &quot;" newline="False"/>
+                <input variable="millas"/>
+                <output expression="&quot;Las millas / galones para este tanque fue de&quot; &amp; millas/galones" newline="True"/>
+                <assign variable="totalGalones" expression="totalGalones + galones"/>
+                <assign variable="totalMillas" expression="totalMillas + millas"/>
+                <output expression="&quot;Introduzca la cantidad de galones usados (-1 para terminar): &quot;" newline="False"/>
+                <input variable="galones"/>
+            </while>
+            <if expression="totalMillas == 0">
+                <then>
+                    <output expression="&quot;No se introdujeron datos.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El promedio total de millas / galones fue de&quot; &amp; totalMillas/totalGalones" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

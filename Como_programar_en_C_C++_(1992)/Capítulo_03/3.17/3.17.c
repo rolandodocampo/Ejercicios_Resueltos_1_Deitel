@@ -32,26 +32,27 @@
 
 main()
 {
-	float millas, galones, Total_Millas = 0, Total_Galones = 0, promMxG;
+	float galones, total_Galones = 0.00, promMxG;
+	short millas, total_Millas = 0;
 	
-	printf("Enter the gallons used (-1 to end): ");
+	printf("Introduzca la cantidad de galones usados (-1 para terminar): ");
 	scanf("%f", &galones);
 	
 	while(galones != -1)
 	{
-		printf("Enter the miles driven: ");
-		scanf("%f", &millas);
-		printf("The miles / gallons for this tank was %f\n\n", millas / galones);
-		Total_Galones += galones;
-		Total_Millas += millas;
+		printf("Introduzca las millas conducidas: ");
+		scanf("%hd", &millas);
+		printf("Las millas / galones para este tanque fue de %f\n\n", millas / galones);
+		total_Galones += galones;
+		total_Millas += millas;
 			
-		printf("Enter the gallons used (-1 to end): ");
+		printf("Introduzca la cantidad de galones usados (-1 para terminar): ");
 		scanf("%f", &galones);
 	}
 	
-	Total_Millas == 0 ? printf("No se introdujo datos.\n") : 
-		printf("The overall average miles/gallon was %f.\n", 
-			Total_Millas / Total_Galones);
+	total_Millas == 0 ? printf("No se introdujeron datos.\n") : 
+		printf("El promedio total de millas / galones fue de %f.\n", 
+			total_Millas / total_Galones);
 	
 	system("PAUSE");
 	return 0;
