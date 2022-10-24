@@ -62,9 +62,8 @@ void hanoi(short discos, short estaca_inicial, short estaca_final, short almacen
 				memoria = tem_final;
 				tem_final = tem_almacen;
 				tem_almacen = memoria;
-				printf("%d %c %d\n", tem_inicial, 26, tem_final);
 			}
-			
+			printf("%d %c %d\n", tem_inicial, 26, tem_final);
 			/*///////////////////////////*/
 			
 			do{	
