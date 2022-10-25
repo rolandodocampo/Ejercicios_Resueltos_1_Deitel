@@ -33,4 +33,4 @@ return 0;
 
 
 
-<img src="D:\Documentos\Mis_proyectos\Proyectos_informaticos\Ejercicios_Como_programar_en_C_C++\Como_programar_en_C_C++_(1992)\Capítulo_02\2.16\2.16_Diagrama_de_flujo - Main.png" alt="2.16_Diagrama_de_flujo - Main"  />
+<img src=".\2.16_Diagrama_de_flujo - Main.png" alt="2.16_Diagrama_de_flujo - Main"  />
