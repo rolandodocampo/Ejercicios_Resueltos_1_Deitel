@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-24 08:55:42 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMjQ7IjA2OjI0OjEzICI7MjM1NQ=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMjQ7IjA4OjU1OjQyICI7MjsyNDcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre dos numeros enteros:&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <input variable="numero2"/>
+            <output expression="&quot;Suma: &quot; &amp; numero1 + numero2" newline="True"/>
+            <output expression="&quot;Producto: &quot; &amp; numero1 * numero2" newline="True"/>
+            <output expression="&quot;Diferencia: &quot; &amp; numero1 - numero2" newline="True"/>
+            <output expression="&quot;Cociente: &quot; &amp; numero1 / numero2" newline="True"/>
+            <output expression="&quot;Modulo: &quot; &amp; numero1 % numero2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
