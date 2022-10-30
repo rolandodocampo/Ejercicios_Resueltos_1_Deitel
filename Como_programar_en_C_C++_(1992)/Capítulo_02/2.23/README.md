@@ -1,4 +1,4 @@
-# 2.23 
+# 2.23 El mayor y el menor de cinco enteros.
 
 **Problema:**
 
@@ -51,4 +51,5 @@ main()
 ```
 **Diagrama de flujo:**
 
-![](.\2.23_Diagrama_de_fujo.png)
+<img src=".\2.23_Diagrama_de_fujo.png"  />
+

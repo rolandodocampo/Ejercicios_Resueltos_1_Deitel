@@ -49,4 +49,5 @@ main()
 ```
 **Diagrama de flujo:**
 
-![](.\2.19_Diagrama_de_flujo.png)
+<img src=".\2.19_Diagrama_de_flujo.png"  />
+

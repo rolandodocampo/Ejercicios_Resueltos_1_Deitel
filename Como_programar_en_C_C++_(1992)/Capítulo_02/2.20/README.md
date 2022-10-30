@@ -1,4 +1,4 @@
-# 2.20 
+# 2.20 Díametro, circunferencia y área de un círculo.
 
 **Problema:**
 
@@ -25,4 +25,5 @@ main()
 ```
 **Diagrama de flujo:**
 
-![](.\2.20_Diagrama_de_flujo.png)
+<img src=".\2.20_Diagrama_de_flujo.png"  />
+
