@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 09:09:06 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMzA7IjA5OjAyOjI5ICI7MjM1OA=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMzA7IjA5OjA5OjA2ICI7MTsyNDY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, num4, num5, menor, mayor" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre cinco enteros: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <input variable="num4"/>
+            <input variable="num5"/>
+            <assign variable="menor" expression="num1"/>
+            <assign variable="mayor" expression="num1"/>
+            <if expression="menor &gt; num2">
+                <then>
+                    <assign variable="menor" expression="num2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="menor &gt; num3">
+                <then>
+                    <assign variable="menor" expression="num3"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="menor &gt; num4">
+                <then>
+                    <assign variable="menor" expression="num4"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="menor &gt; num5">
+                <then>
+                    <assign variable="menor" expression="num5"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mayor &lt; num2">
+                <then>
+                    <assign variable="mayor" expression="num2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mayor &lt; num3">
+                <then>
+                    <assign variable="mayor" expression="num3"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mayor &lt; num4">
+                <then>
+                    <assign variable="mayor" expression="num4"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mayor &lt; num5">
+                <then>
+                    <assign variable="mayor" expression="num5"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="mayor &amp; &quot; es el mayor&quot;" newline="True"/>
+            <output expression="menor &amp; &quot; es el menor&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

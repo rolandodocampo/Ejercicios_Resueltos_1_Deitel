@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 08:57:02 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMzA7IjA4OjUwOjM0ICI7MjM1Ng=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMzA7IjA4OjU3OjAyICI7MTsyNDY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radio" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre el raio del c&#237;rculo: &quot;" newline="True"/>
+            <input variable="radio"/>
+            <output expression="&quot;Di&#225;metro: &quot; &amp; 2 * radio" newline="True"/>
+            <output expression="&quot;Longitud de circunferencia: &quot; &amp; 2 * radio * 3.14" newline="True"/>
+            <output expression="&quot;&#193;rea: &quot; &amp; 3.14 * radio * radio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
