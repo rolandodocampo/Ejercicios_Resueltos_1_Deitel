@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 07:01:39 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTEtMDY7IjA2OjU0OjIwICI7MjM1Nw=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTEtMDY7IjA3OjAxOjM5ICI7MTsyNDY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, resto" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre un n&#250;mero de cinco d&#237;gitos: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <output expression="numero / 10000 &amp; &quot;   &quot;" newline="False"/>
+            <assign variable="resto" expression="numero % 10000"/>
+            <output expression="resto / 1000 &amp; &quot;   &quot;" newline="False"/>
+            <assign variable="resto" expression="resto % 1000"/>
+            <output expression="resto / 100 &amp; &quot;   &quot;" newline="False"/>
+            <assign variable="resto" expression="resto % 100"/>
+            <output expression="resto / 10 &amp; &quot;   &quot;" newline="False"/>
+            <assign variable="resto" expression="resto % 10"/>
+            <output expression="resto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

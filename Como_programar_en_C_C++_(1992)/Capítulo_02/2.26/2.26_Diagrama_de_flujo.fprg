@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 06:42:47 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTEtMDY7IjA2OjM4OjU3ICI7MjM2OQ=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTEtMDY7IjA2OjQyOjQ3ICI7MTsyNDcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre dos enteros: &quot;" newline="True"/>
+            <input variable="numero1"/>
+            <input variable="numero2"/>
+            <if expression="(numero1 % numero2) == 0">
+                <then>
+                    <output expression="numero1 &amp; &quot; es multiplo de &quot; &amp; numero2" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="(numero1 % numero2) != 0">
+                <then>
+                    <output expression="numero1 &amp; &quot; no es multiplo de &quot; &amp; numero2" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

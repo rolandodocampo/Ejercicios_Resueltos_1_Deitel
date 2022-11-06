@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 12:35:35 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTEtMDY7IjEyOjI3OjUzICI7MjM2MA=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTEtMDY7IjEyOjM1OjM1ICI7MTsyNDY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre un n&#250;mero entero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="(numero % 2) == 0">
+                <then>
+                    <output expression="numero &amp; &quot; es par&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="(numero % 2) != 0">
+                <then>
+                    <output expression="numero &amp; &quot; es impar&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
