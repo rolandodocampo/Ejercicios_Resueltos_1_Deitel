@@ -24,7 +24,7 @@
 
 void imprimir_deck(const char [][TIPO]);	/* OK (deck) */
 void shuffle(char [][TIPO]);	/* OK (deck) ... */
-void deal(const char [][TIPO], const char *[], const char *[]); /* OK (deck, face, suit); Nota: Da error al poner const en los dos char. */
+void deal(const char [][TIPO], const char *[], const char *[]); /* OK (deck, face, suit)*/
 char cant_par(const char [][TIPO]); /* OK (deck); Debuelve la cantidad de pares que hay en la mano. */				 
 char cant_tipo(const char [][13]);	/* OK (deck); Debuelve la cantidad de barajas de un mismo tipo mayor que tres. */
 char color(const char [][13]);	/* OK (deck); Debuelve 1 si hay un color. */
