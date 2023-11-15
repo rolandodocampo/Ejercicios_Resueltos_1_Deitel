@@ -26,33 +26,33 @@
 		Enter the gallons used (-1 to end): -1
 		The overall average miles/gallon was 21.601423
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 
 main()
 {
-	float galones, total_Galones = 0.00, promMxG;
-	short millas, total_Millas = 0;
+float galones, mxG, tMxG = 0; /*mxG: millas por galones*/
+	short millas, tanque = 0;  /*tMxG: total de millas por galones*/
 	
-	printf("Introduzca la cantidad de galones usados (-1 para terminar): ");
+	printf("Galones usados (-1 para terminar): ");
 	scanf("%f", &galones);
 	
 	while(galones != -1)
 	{
-		printf("Introduzca las millas conducidas: ");
+		printf("Millas conducidas: ");
 		scanf("%hd", &millas);
-		printf("Las millas / galones para este tanque fue de %f\n\n", millas / galones);
-		total_Galones += galones;
-		total_Millas += millas;
-			
-		printf("Introduzca la cantidad de galones usados (-1 para terminar): ");
+		mxG = millas / galones;
+		tMxG += mxG;
+		tanque++;
+		printf("Las millas/galones en este tanque es de: %f.\n\n", mxG);
+		printf("Galones usados (-1 para terminar): ");
 		scanf("%f", &galones);
 	}
 	
-	total_Millas == 0 ? printf("No se introdujeron datos.\n") : 
-		printf("El promedio total de millas / galones fue de %f.\n", 
-			total_Millas / total_Galones);
+	if(tanque != 0)
+		printf("El promedio de millas/galones es de: %f.\n", tMxG / tanque);
+	else
+		printf("Valores no introduzidos");
 	
 	system("PAUSE");
 	return 0;

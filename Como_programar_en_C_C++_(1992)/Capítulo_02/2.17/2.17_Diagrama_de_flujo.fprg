@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-01 01:11:03 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMDctMDE7IjAxOjAxOjIxICI7MjM0Ng=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMDctMDE7IjAxOjExOjAzICI7MTsyNDU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="2"/>
+            <assign variable="n3" expression="3"/>
+            <assign variable="n4" expression="4"/>
+            <comment text="Inciso a)"/>
+            <output expression="&quot;1 &quot; &amp; &quot; 2&quot; &amp; &quot; 3&quot; &amp; &quot; 4&quot;" newline="True"/>
+            <comment text="Inciso b)"/>
+            <output expression="n1 &amp; &quot; &quot; &amp; n2 &amp; &quot; &quot; &amp; n3 &amp; &quot; &quot; &amp; n4" newline="True"/>
+            <comment text="Inciso c)"/>
+            <output expression="&quot;1 &quot;" newline="False"/>
+            <output expression="&quot; 2&quot;" newline="False"/>
+            <output expression="&quot; 3&quot;" newline="False"/>
+            <output expression="&quot; 4&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

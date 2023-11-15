@@ -4,34 +4,35 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="LG"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-02 11:57:03 "/>
+        <attribute name="saved" value="2023-11-13 10:36:00 "/>
         <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMDI7IjExOjQyOjM1ICI7MjM1MQ=="/>
-        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjItMTAtMDI7IjExOjU3OjAzICI7MTsyNDYw"/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTM7IjEwOjM2OjAwICI7MzsyNDU5"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="galones, totalGalones, promMxG" type="Real" array="False" size=""/>
-            <declare name="millas, totalMillas" type="Integer" array="False" size=""/>
-            <assign variable="totalGalones" expression="0.00"/>
-            <assign variable="totalMillas" expression="0"/>
-            <output expression="&quot;Introduzca la cantidad de galones usados (-1 para terminar): &quot;" newline="False"/>
+            <declare name="galones, mxG, tMxG" type="Real" array="False" size=""/>
+            <declare name="millas, tanque" type="Integer" array="False" size=""/>
+            <assign variable="tMxG" expression="0"/>
+            <assign variable="tanque" expression="0"/>
+            <output expression="&quot;Galones usados (-1 para terminar): &quot;" newline="True"/>
             <input variable="galones"/>
             <while expression="galones != -1">
-                <output expression="&quot;Introduzca las millas conducidas: &quot;" newline="False"/>
+                <output expression="&quot;Millas conducidas: &quot;" newline="True"/>
                 <input variable="millas"/>
-                <output expression="&quot;Las millas / galones para este tanque fue de&quot; &amp; millas/galones" newline="True"/>
-                <assign variable="totalGalones" expression="totalGalones + galones"/>
-                <assign variable="totalMillas" expression="totalMillas + millas"/>
-                <output expression="&quot;Introduzca la cantidad de galones usados (-1 para terminar): &quot;" newline="False"/>
+                <assign variable="mxG" expression="millas / galones"/>
+                <assign variable="tMxG" expression="tMxG + mxG"/>
+                <assign variable="tanque" expression="tanque + 1"/>
+                <output expression="&quot;Las millas/galones en este tanque es de: &quot; &amp; mxG" newline="True"/>
+                <output expression="&quot;Galones usados (-1 para terminar): &quot;" newline="True"/>
                 <input variable="galones"/>
             </while>
-            <if expression="totalMillas == 0">
+            <if expression="tanque != 0">
                 <then>
-                    <output expression="&quot;No se introdujeron datos.&quot;" newline="True"/>
+                    <output expression="&quot;El promedio de millas/galones es de: &quot; &amp; tMxG/tanque" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;El promedio total de millas / galones fue de&quot; &amp; totalMillas/totalGalones" newline="True"/>
+                    <output expression="&quot;Valores no introduzidos&quot;" newline="True"/>
                 </else>
             </if>
         </body>

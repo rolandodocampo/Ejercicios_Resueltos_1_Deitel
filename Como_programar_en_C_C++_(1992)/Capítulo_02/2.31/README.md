@@ -28,17 +28,17 @@ main()
 	printf("number\tsquare\tcube\n");
 	printf("0\t0\t0\n");
 	printf("1\t1\t1\n");
-	printf("2\t4\t8\n");
-	printf("3\t9\t27\n");
-	printf("4\t16\t64\n");
-	printf("5\t25\t125\n");
-	printf("6\t36\t216\n");
-	printf("7\t49\t343\n");
-	printf("8\t64\t512\n");
-	printf("9\t81\t729\n");
-	printf("10\t100\t1000\n");
-
-    system("PAUSE");
-    return 0;
+	printf("2\t%d\t%d\n", 2 * 2, 2 * 2 * 2);
+	printf("3\t%d\t%d\n", 3 * 3, 3 * 3 * 3);
+	printf("4\t%d\t%d\n", 4 * 4, 4 * 4 * 4);
+	printf("5\t%d\t%d\n", 5 * 5, 5 * 5 * 5);
+	printf("6\t%d\t%d\n", 6 * 6, 6 * 6 * 6);
+	printf("7\t%d\t%d\n", 7 * 7, 7 * 7 * 7);
+	printf("8\t%d\t%d\n", 8 * 8, 8 * 8 * 8);
+	printf("9\t%d\t%d\n", 9 * 9, 9 * 9 * 9);
+	printf("10\t%d\t%d\n", 10* 10, 10 * 10 * 10);
+	
+	system("PAUSE");
+	return 0;
 }
 ```

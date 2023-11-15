@@ -38,7 +38,7 @@ main()
     return 0;
 }
 ```
+**Diagrama de flujo:**
 
-
-
+<img src=".\2.21_Diagrama_de_flujo.png"/>
 

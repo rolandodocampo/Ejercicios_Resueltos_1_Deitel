@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 05:07:40 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTI7IjA0OjUzOjQzICI7MjM1Nw=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTI7IjA1OjA3OjQwICI7MTsyNDYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;RRRRRRRRR&quot;" newline="True"/>
+            <output expression="&quot;              R          R&quot;" newline="True"/>
+            <output expression="&quot;       R      R          R&quot;" newline="True"/>
+            <output expression="&quot;R             RRRR&quot;" newline="True"/>
+            <output expression="&quot;DDDDDDDDDD&quot;" newline="True"/>
+            <output expression="&quot;D                        D&quot;" newline="True"/>
+            <output expression="&quot;D                        D&quot;" newline="True"/>
+            <output expression="&quot;     DDDDDDD&quot;" newline="True"/>
+            <output expression="&quot;FFFFFFFFFFFFF&quot;" newline="True"/>
+            <output expression="&quot;                F          F&quot;" newline="True"/>
+            <output expression="&quot;                F          F&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
