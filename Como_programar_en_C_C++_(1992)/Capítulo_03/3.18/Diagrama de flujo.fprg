@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-15 07:55:13 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTU7IjA0OjE0OjAxICI7MjM1MQ=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTU7IjA3OjU1OjEzICI7MTsyNDcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cuenta" type="Integer" array="False" size=""/>
+            <declare name="balanceInicial, cargos, creditos, limite, saldoNuevo" type="Real" array="False" size=""/>
+            <output expression="&quot;Entre el numero de la cuenta (-1 para salir): &quot;" newline="False"/>
+            <input variable="cuenta"/>
+            <while expression="cuenta != -1">
+                <output expression="&quot;Entre el saldo inicial: &quot;" newline="False"/>
+                <input variable="balanceInicial"/>
+                <output expression="&quot;Entre el total de cargos del mes: &quot;" newline="False"/>
+                <input variable="cargos"/>
+                <output expression="&quot;Entre el total de creditos del mes: &quot;" newline="False"/>
+                <input variable="creditos"/>
+                <output expression="&quot;Entre el limite de creditos: &quot;" newline="False"/>
+                <input variable="limite"/>
+                <assign variable="saldoNuevo" expression="balanceInicial + cargos - creditos"/>
+                <if expression="saldoNuevo &gt; limite">
+                    <then>
+                        <output expression="&quot;Numero de la cuenta: &quot; &amp; cuenta" newline="True"/>
+                        <output expression="&quot;Limite de credito:   &quot; &amp; limite" newline="True"/>
+                        <output expression="&quot;Nuevo saldo:         &quot; &amp; saldoNuevo" newline="True"/>
+                        <output expression="&quot;Limite de credito excedido.&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Entre el numero de la cuenta (-1 para salir): &quot;" newline="False"/>
+                <input variable="cuenta"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

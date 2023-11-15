@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-15 08:20:45 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTU7IjA4OjE2OjA1ICI7MjM2MQ=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTU7IjA4OjIwOjQ1ICI7MTsyNDY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ventas, salario" type="Real" array="False" size=""/>
+            <output expression="&quot;Introduzca las ventas brutas (-1 para salir): &quot;" newline="True"/>
+            <input variable="ventas"/>
+            <while expression="ventas != -1">
+                <assign variable="salario" expression="200 + ventas * 0.09"/>
+                <output expression="&quot;Su salario es: $&quot; &amp; salario" newline="True"/>
+                <output expression="&quot;Introduzca las ventas brutas (-1 para salir): &quot;" newline="True"/>
+                <input variable="ventas"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

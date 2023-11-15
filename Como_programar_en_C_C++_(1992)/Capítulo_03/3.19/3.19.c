@@ -28,14 +28,14 @@ main()
 {
 	float ventas;
 	
-	printf("Enter sales in dollars (-1 to end): ");
+	printf("Introduzca las ventas brutas (-1 para salir): ");
 	scanf("%f", &ventas);
 	
 	while(ventas != -1)
 	{
-		printf("Salary is: $%.2f\n\n", 200 + ventas * 0.09);
+		printf("Su salario es: $%.2f\n\n", 200 + ventas * 0.09);
 		
-		printf("Enter sales in dollars (-1 to end): ");
+		printf("Introduzca las ventas brutas (-1 para salir): ");
 		scanf("%f", &ventas);
 	}
 

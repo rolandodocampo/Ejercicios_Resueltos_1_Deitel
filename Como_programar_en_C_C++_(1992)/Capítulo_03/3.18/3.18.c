@@ -48,40 +48,37 @@
 
 main()
 {
-	int No_Cuenta;
-	float Balance_Inicial, Total_Cargos, Total_Creditos, Limite_Credito,
-			Balance_Nuevo;
+	int no_Cuenta;
+	float balance_Inicial, total_Cargos, total_Creditos, limite_Credito,
+			balance_Nuevo;
 			
-	printf("Enter account number (-1 to end): ");
-	scanf("%d", &No_Cuenta);
+	printf("Entre el numero de la cuenta (-1 para salir): ");
+	scanf("%d", &no_Cuenta);
 	
-	while(No_Cuenta != -1)
+	while(no_Cuenta != -1)
 	{
-	   printf("Enter beginning balance: ");
-		scanf("%f", &Balance_Inicial);
-		printf("Enter total charges: ");
-		scanf("%f", &Total_Cargos);
-		printf("Enter total credits: ");
-		scanf("%f", &Total_Creditos);
-		printf("Enter credit limit: ");
-		scanf("%f", &Limite_Credito);
-		Balance_Nuevo = Balance_Inicial + Total_Cargos - Total_Creditos;
+	   printf("Entre el saldo inicial: ");
+		scanf("%f", &balance_Inicial);
+		printf("Entre el total de cargos del mes: ");
+		scanf("%f", &total_Cargos);
+		printf("Entre el total de creditos del mes: ");
+		scanf("%f", &total_Creditos);
+		printf("Entre el limite de creditos: ");
+		scanf("%f", &limite_Credito);
+		balance_Nuevo = balance_Inicial + total_Cargos - total_Creditos;
 		
-		if (Balance_Nuevo <= Limite_Credito)
+		if (balance_Nuevo > limite_Credito)
 		{
-			printf("\nEnter account number (-1 to end): ");
-			scanf("%d", &No_Cuenta);
-		} 
-		else	
-		{
-		   printf("Account:      %d\n", No_Cuenta);
-			printf("Credit limit: %.2f\n", Limite_Credito);	
-			printf("Balance:      %.2f\n", Balance_Nuevo);
-			printf("Credit Limit Exceeded.\n\n");
-			
-			printf("Enter account number (-1 to end): ");
-			scanf("%d", &No_Cuenta);
+			printf("Numero de la cuenta: %d.\n", no_Cuenta);
+			printf("Limite de credito:   %.2f.\n", limite_Credito);
+			printf("Nuevo saldo:         %.2f.\n", balance_Nuevo);
+			printf("Limite de credito excedido.\a\n\n");
 		}
+		else
+			printf("\n"); /*Para dar estetica en la impresión*/
+		
+		printf("Entre el numero de la cuenta (-1 para salir): ");
+		scanf("%d", &no_Cuenta);
 	}
 	
    system("PAUSE");
