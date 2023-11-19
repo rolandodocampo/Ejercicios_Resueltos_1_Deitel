@@ -24,31 +24,34 @@
 	
 		Enter # of hours worked (-1 to end): -1
 */
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 main()
 {
-	int horas_trabajadas;
-	float rate;
+	short horas;
+	float tasa, salario;
 	
-	printf("Enter # of hours worked (-1 to end): ");
-	scanf("%d", &horas_trabajadas);
+	printf("Entre la cantidad de horas trabajadas (-1 para salir): ");
+	scanf("%hd", &horas);
 	
-	while(horas_trabajadas != -1)
+	while(horas != -1)
 	{
-		printf("Enter hourly rate of the worker ($00.00): ");
-		scanf("%f", &rate);
+		printf("Entre la tasa horaria ($00.00): ");
+		scanf("%f", &tasa);
 		
-		if(horas_trabajadas <= 40)
-			printf("Salary is $%.2f\n\n", horas_trabajadas * rate);
+		if( horas <= 40)
+			printf("Salario es de: $%.2f\n\n", horas * tasa);  
 		else
-			printf("Salary is $%.2f\n\n", horas_trabajadas * rate + rate / 2);
+		{
+			salario = 3 * tasa * horas / 2 - 60 * tasa + 40 * tasa; 
+			printf("Salario es de: $%.2f\n\n", salario);	
+		}
 			
-		printf("Enter # of hours worked (-1 to end): ");
-		scanf("%d", &horas_trabajadas);	
+		printf("Entre la cantidad de horas trabajadas (-1 para salir): ");
+		scanf("%hd", &horas);
 	}
-
+	
    system("PAUSE");
    return 0;
 }

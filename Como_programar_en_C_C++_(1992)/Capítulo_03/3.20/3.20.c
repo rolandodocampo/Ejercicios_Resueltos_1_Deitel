@@ -31,23 +31,23 @@
 
 main()
 {
-	float principal, rate, interest;
-	int days;
+	float inicial, juros, interes;
+	short dias;
 	
-	printf("Enter loan principal (-1 to end): ");
-	scanf("%f", &principal);
+	printf("Introduzca el valor inicial (-1 para salir): ");
+	scanf("%f", &inicial);
 	
-	while(principal != -1)
+	while(inicial != -1)
 	{
-		printf("Enter interest rate: ");
-		scanf("%f", &rate);
-		printf("Enter term of the loan in days: ");
-		scanf("%d", &days);
-		interest = principal * rate * days / 365; 
-		printf("The interest charge is $%.2f\n\n", interest);
+		printf("Introduzca la tasa de juros anual: ");
+		scanf("%f", &juros);
+		printf("Introduzca la cantidad de dias: ");
+		scanf("%hd", &dias);
+		interes = inicial * juros * dias / 365; 
+		printf("El interes cargado es de $%.2f\n\n", interes);
 		
-		printf("Enter loan principal (-1 to end): ");
-		scanf("%f", &principal);
+		printf("Introduzca el valor inicial (-1 para salir): ");
+		scanf("%f", &inicial);
 	} 
 
    system("PAUSE");

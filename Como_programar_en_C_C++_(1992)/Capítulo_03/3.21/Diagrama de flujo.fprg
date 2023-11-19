@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-18 10:56:38 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTg7IjEwOjQ5OjQ5ICI7MjM3MQ=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTg7IjEwOjU2OjM4ICI7MTsyNDc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horas" type="Integer" array="False" size=""/>
+            <declare name="tasa, salario" type="Real" array="False" size=""/>
+            <output expression="&quot;Entre la cantidad de horas trabajadas (-1 para salir): &quot;" newline="True"/>
+            <input variable="horas"/>
+            <while expression="horas != -1">
+                <output expression="&quot;Entre la tasa horaria ($00.00): &quot;" newline="True"/>
+                <input variable="tasa"/>
+                <if expression="horas &lt;= 40">
+                    <then>
+                        <output expression="&quot;Salario es de: $&quot; &amp; (horas * tasa)" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="salario" expression="3 * tasa * horas / 2 - 60 * tasa + 40 * tasa"/>
+                        <output expression="&quot;Salario es de: $&quot; &amp; salario" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Entre la cantidad de horas trabajadas (-1 para salir): &quot;" newline="True"/>
+                <input variable="horas"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

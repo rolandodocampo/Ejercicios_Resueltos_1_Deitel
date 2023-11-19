@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-18 09:33:00 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTg7IjA5OjI3OjMxICI7MjM2Ng=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTg7IjA5OjMzOjAwICI7MTsyNDY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicial, juros, interes" type="Real" array="False" size=""/>
+            <declare name="dias" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduzca el valor inicial (-1 para salir): &quot;" newline="True"/>
+            <input variable="inicial"/>
+            <while expression="inicial != -1">
+                <output expression="&quot;Introduzca la tasa de juros anual: &quot;" newline="True"/>
+                <input variable="juros"/>
+                <output expression="&quot;Introduzca la cantidad de dias: &quot;" newline="True"/>
+                <input variable="dias"/>
+                <assign variable="interes" expression="inicial * juros * dias / 365"/>
+                <output expression="&quot;El interes cargado es de $&quot; &amp; interes" newline="True"/>
+                <output expression="&quot;Introduzca el valor inicial (-1 para salir): &quot;" newline="True"/>
+                <input variable="inicial"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
