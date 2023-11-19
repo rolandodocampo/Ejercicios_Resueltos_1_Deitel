@@ -11,14 +11,11 @@
 
 main()
 {
-	int contador = 1;
+	int contador = 0;
 	
-	while(contador <= 10)
-	{
+	while(++contador <= 10)
 		contador < 10 ? printf("%d   ", contador) : printf("%d\n", contador);
-		++contador;
-	}
+	
    system("PAUSE");
    return 0;
 }
-

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-19 07:40:50 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTk7IjA3OjM3OjUwICI7MjM2Nw=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTk7IjA3OjQwOjUwICI7MTsyNDY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <while expression="contador &lt;= 10">
+                <if expression="contador &lt; 10">
+                    <then>
+                        <output expression="contador &amp; &quot;   &quot;" newline="False"/>
+                    </then>
+                    <else>
+                        <output expression="contador" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
