@@ -1,4 +1,4 @@
-/*
+                                                                                                                                                                 /*
 	Author: Rolando Docampo Fernández
 	Place: INEL Santiago de Cuba
 	Date: 17/07/19 13:28
@@ -24,16 +24,11 @@
 
 main()
 {
-	int contador = 1;
+	int contador = 0;
 	
 	printf("N\tN*10\tN*100\tN*1000\n\n");
-	while(contador <= 10)
-	{
-		printf("%d\t%d\t%d\t%d\n", contador, contador * 10, contador * 100,
-					contador * 1000);
-		
-		++contador;	
-	}
+	while(++contador <= 10)
+		printf("%d\t%d\t%d\t%d\n", contador, contador * 10, contador * 100, contador * 1000);
 
    system("PAUSE");
    return 0;

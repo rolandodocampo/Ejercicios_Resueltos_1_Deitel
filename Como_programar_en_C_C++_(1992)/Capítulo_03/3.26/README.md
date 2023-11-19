@@ -1,4 +1,6 @@
-# 3.26 
+# 3.26 Imprimir tabla
+
+**Problema:**
 
 Escriba un programa en C que utilice ciclo para producir la siguiente tabla de valores:
 
@@ -9,4 +11,30 @@ Escriba un programa en C que utilice ciclo para producir la siguiente tabla de v
 		9		11			13			15
 		12		14			16			18
 		15		17			19			21
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Solución:**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+main()
+{
+	int contador = 3;
+	
+	printf("A\tA+2\tA+4\tA+6\n\n");
+	while(contador <= 15)
+	{
+		printf("%d\t%d\t%d\t%d\n", contador, contador + 2, contador + 4,
+				contador + 6);
+		
+		contador +=3;
+	}
+
+   system("PAUSE");
+   return 0;
+}
+```
 

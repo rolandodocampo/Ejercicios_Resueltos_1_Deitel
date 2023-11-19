@@ -43,7 +43,7 @@ main()
 		++contador;
 	}
 	
-	printf("Los dos valores mayores son: %d, %d\n", mayor1, mayor2);
+	printf("Los dos valores mayores son: %d y %d\n", mayor1, mayor2);
 
    system("PAUSE");
    return 0;

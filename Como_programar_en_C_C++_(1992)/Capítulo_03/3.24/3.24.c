@@ -11,36 +11,34 @@
 	continuación en C, que introduzca una serie de 10 números, y determine e 
 	imprima el mayor de los mismos. Sugerencia: su programa debería de utilizar 
 	tres variables como sigue:
-		counter: Un contador para contar hasta 10 (es decir, para controlar 
+	
+		- counter: Un contador para contar hasta 10 (es decir, para controlar 
 		cuantos números han sido introducidos, y para determinar cuándo se han 
 		procesado todos los 10 números).
-		number: El número actual introducido al programa.
-		largest: El número más grande encontrado hasta ahora.
+		- number: El número actual introducido al programa.
+		- largest: El número más grande encontrado hasta ahora.
 */
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 main()
 {
-	int counter = 2, number, largest;
+	int counter = 1, number, largest;
 	
-	printf("Entre el numero %d: ", 1);
+	printf("Entre el %d numero: ", counter);
 	scanf("%d", &number);
 	largest = number;
 	
-	while(counter <= 10)
+	while(++counter <= 10)
 	{
-		printf("Entre el numero %d: ", counter);
+		printf("Entre el %d numero: ", counter);
 		scanf("%d", &number);
 		
-		if(largest < number)
+		if(number > largest)
 			largest = number;
-		else ;
-		
-		++counter;	
 	}
 	
-	printf("El mayor es: %d\n", largest);
+	printf("El mayor es: %d.\n", largest);
 
    system("PAUSE");
    return 0;

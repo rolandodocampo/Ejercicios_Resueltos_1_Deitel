@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-19 08:52:10 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTk7IjA4OjQxOjE5ICI7MjM2OA=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMTk7IjA4OjUyOjEwICI7MTsyNDY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, numero, mayor" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="2"/>
+            <output expression="&quot;Entre el &quot; &amp; 1 &amp; &quot;n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="mayor" expression="numero"/>
+            <while expression="contador &lt;= 10">
+                <output expression="&quot;Entre el &quot; &amp; contador &amp; &quot; numero: &quot;" newline="True"/>
+                <input variable="numero"/>
+                <if expression="numero &gt; mayor">
+                    <then>
+                        <assign variable="mayor" expression="numero"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+            <output expression="&quot;El mayor es: &quot; &amp; mayor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
