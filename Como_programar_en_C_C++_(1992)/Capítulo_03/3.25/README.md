@@ -39,3 +39,6 @@ main()
 }
 ```
 
+**Diafragma de flujo:**
+
+<img src=".\3.25_Diagrama_de_flujo.png"  />

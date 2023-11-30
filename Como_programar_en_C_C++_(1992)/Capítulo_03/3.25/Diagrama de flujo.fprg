@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LG"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-30 12:45:08 "/>
+        <attribute name="created" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMzA7IjEyOjM3OjU2ICI7MjM2Mg=="/>
+        <attribute name="edited" value="TEc7REVTS1RPUC0zMkc0SFBBOzIwMjMtMTEtMzA7IjEyOjQ1OjA4ICI7MTsyNDY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <output expression="&quot;N   10*N   100*N   1000*N&quot;" newline="True"/>
+            <while expression="contador &lt;= 10">
+                <output expression="contador &amp; &quot;   &quot; &amp; contador * 10 &amp; &quot;       &quot; &amp; contador * 100 &amp; &quot;        &quot; &amp; contador * 1000" newline="True"/>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -26,7 +26,7 @@ main()
 {
 	int contador = 0;
 	
-	printf("N\tN*10\tN*100\tN*1000\n\n");
+	printf("N\t10*N\t100*N\t1000*N\n\n");
 	while(++contador <= 10)
 		printf("%d\t%d\t%d\t%d\n", contador, contador * 10, contador * 100, contador * 1000);
 

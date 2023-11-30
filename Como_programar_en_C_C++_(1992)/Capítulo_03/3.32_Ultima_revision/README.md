@@ -1,21 +1,18 @@
-/*
-	Author: Rolando Docampo Fernández
-	Place: INEL Santiago de Cuba
-	Date: 18/07/19 07:59
-	Description: 3.32 (Otro problema del else colgante). Modifique el código que 
-	sigue para producir la salida mostrada. Utilice las técnicas apropiadas de de 
-	sangrías. No puede hacer ningún cambio a excepción de inserción de llaves. En
-	un programa C el compilador ignorará la sangría. Hemos eliminado las sangrías
-	del código siguiente para hacer más atractivo el problema. Nota: pudiera ser
-	posible que no se requiera de ninguna modificación.
-		if(y == 8)
-		if(x == 5)
-		printf("@@@@@\n");
-		else
-		printf("#####\n");
-		printf("$$$$$\n");
-		printf("&&&&&\n");
-	
+# 3.32 Problema del else colgante
+
+**Problema:**
+
+(Otro problema del else colgante). Modifique el cÃ³digo que sigue para producir la salida mostrada. Utilice las tÃ©cnicas apropiadas de de sangrÃ­as. No puede hacer ningÃºn cambio a excepciÃ³n de inserciÃ³n de llaves. En un programa C el compilador ignorarÃ¡ la sangrÃ­a. Hemos eliminado las sangrÃ­as del cÃ³digo siguiente para hacer mÃ¡s atractivo el problema. Nota: pudiera ser posible que no se requiera de ninguna modificaciÃ³n.
+
+â€‹		if(y == 8)
+â€‹		if(x == 5)
+â€‹		printf("@@@@@\n");
+â€‹		else
+â€‹		printf("#####\n");
+â€‹		printf("$$$$$\n");
+â€‹		printf("&&&&&\n");
+â€‹	
+
 	a) Suponiendo x = 5 y y = 8, se produce la siguiente salida.
 		@@@@@
 		$$$$$
@@ -26,11 +23,16 @@
 		@@@@@
 		&&&&&
 	d) Suponiendo x = 5 y y = 7, se produce la siguiente salida. Nota: los tres 
-	enunciados printf últimos son todos partes de un enunciado compuesto.
+	enunciados printf Ãºltimos son todos partes de un enunciado compuesto.
 		#####
 		$$$$$
 		&&&&&
-*/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**SoluciÃ³n:**
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -44,9 +46,10 @@ main()
 	
 	if(y == 8)
 		if(x == 5)
-		printf("@@@@@\n"); 
+			printf("@@@@@\n"); 
 		else
-		printf("  #####\n");
+			printf("  #####\n");
+			
 	printf("  $$$$$\n"); 
 	printf("  &&&&&\n");  
 	printf("--------\n");
@@ -57,14 +60,15 @@ main()
 	
 	if(y == 8)
 		if(x == 5)
-		printf("@@@@@\n"); 
+			printf("@@@@@\n"); 
 		else
 		{
 			printf("  #####\n");
 			printf("  $$$$$\n"); 
 			printf("  &&&&&\n");  
 		}
-		printf("--------\n");
+	
+	printf("--------\n");
 	
 	printf("c)"); 
 	x = 5;
@@ -72,12 +76,13 @@ main()
 	
 	if(y == 8)
 		if(x == 5)
-		printf("@@@@@\n"); 
+			printf("@@@@@\n"); 
 		else
 		{
 			printf("  #####\n");
 			printf("  $$$$$\n"); 
 		}
+		
 	printf("  &&&&&\n");  
 	printf("--------\n");
 	
@@ -88,7 +93,7 @@ main()
 	if(y == 8)
 	{
 		if(x == 5)
-		printf("@@@@@\n"); 
+			printf("@@@@@\n"); 
 	}
 	else
 	{
@@ -97,6 +102,8 @@ main()
 		printf("  &&&&&\n"); 
 	}
 	printf("--------\n");
+	
    system("PAUSE");
    return 0;
 }
+```
